@@ -1,5 +1,5 @@
 <?php
-
+namespace App\core\domain\entities;
 
 class Specialite {
     private int $id;
@@ -14,5 +14,13 @@ class Specialite {
         $this->id=$id;
         $this->description=$description;
         $this->libelle=$libelle;
+    }
+
+    public function getLibelle(){
+        return $this->libelle;
+    }
+
+    public function getDescription(){
+        return $this->description;
     }
 }
