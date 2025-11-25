@@ -1,13 +1,14 @@
 <?php
 
-require_once __DIR__ . '/config/bootstrap.php';
+require_once __DIR__ . '/../config/bootstrap.php';
 
-use App\Core\Domain\Entities\Specialite;
+use App\core\domain\entities\Specialite;
 
-$entityManager = require __DIR__ . '/config/bootstrap.php';
+$entityManager = require __DIR__ . '/../config/bootstrap.php';
 
+//Question 1. afficher la spécialité d'identifiant 1 : id, libellé, description.
 $specialiteRepository = $entityManager->getRepository(Specialite::class);
-$specialite = $specialiteRepository->findSpecialiteById(1);
+$specialite = $specialiteRepository->find(1);
 
 if ($specialite) {
     print "ID: " . $specialite->getId() . "\n";

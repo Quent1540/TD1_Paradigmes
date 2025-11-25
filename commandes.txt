@@ -1,0 +1,5 @@
+Question 1. afficher la spécialité d'identifiant 1 : id, libellé, description.
+--> docker-compose run --rm api.pratilib php scripts/fetch_specialite.php
+
+
+

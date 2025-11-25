@@ -1,5 +1,4 @@
 {
-
   "require" : {
     "php": ">=8.2",
     "doctrine/orm": "^3.5",
@@ -23,9 +22,9 @@
   },
   "autoload": {
     "psr-4" : {
-      "toubilib\\api\\" : "./src/api",
-      "toubilib\\core\\" : "./src/application_core",
-      "toubilib\\infra\\" : "./src/infrastructure"
+      "App\\" : "src/",
+      "App\\core\\" : "./src/application_core",
+      "App\\infra\\" : "./src/infrastructure"
     }
   }
 }
