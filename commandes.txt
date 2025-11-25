@@ -1,3 +1,5 @@
+Les scripts php qui répondent aux questions suivantes sont situés dans le dossier "scripts" à la racine du projet.
+
 Question 1. afficher la spécialité d'identifiant 1 : id, libellé, description.
 --> docker-compose run --rm api.pratilib php scripts/fetch_specialite.php
 
